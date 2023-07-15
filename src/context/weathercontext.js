@@ -12,7 +12,7 @@ export const WeatherProvider = ({children}) => {
     
     useEffect(() => {
         
-            const key = "f3746edb76fc1bd8e7f6aace861f8d90"
+            const key = process.env.REACT_APP_WEATHER_API_KEY;
            axios(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${key}&units=metric&lang=tr&cnt=7`)
            .then((res) => {
             setWeather(res.data.list)

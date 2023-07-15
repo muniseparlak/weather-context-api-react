@@ -29,6 +29,7 @@ weather.map((item, id) =>
            <br></br>
            <h3>{weat.description}</h3>
            <img src={`http://openweathermap.org/img/w/${weat.icon}.png`} alt='weather icon'/> 
+           
            <h3>{Math.round(item.main.temp_min)}<span>°C </span> </h3>
            <br></br>
            <hr></hr>
